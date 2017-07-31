@@ -1,0 +1,1362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="inc" displayName="inc" projectFiles="true">
+      <logicalFolder name="thrift" displayName="thrift" projectFiles="true">
+        <logicalFolder name="async" displayName="async" projectFiles="true">
+          <itemPath>inc/thrift/async/TAsyncBufferProcessor.h</itemPath>
+          <itemPath>inc/thrift/async/TAsyncChannel.h</itemPath>
+          <itemPath>inc/thrift/async/TAsyncDispatchProcessor.h</itemPath>
+          <itemPath>inc/thrift/async/TAsyncProcessor.h</itemPath>
+          <itemPath>inc/thrift/async/TAsyncProtocolProcessor.h</itemPath>
+          <itemPath>inc/thrift/async/TConcurrentClientSyncInfo.h</itemPath>
+          <itemPath>inc/thrift/async/TEvhttpClientChannel.h</itemPath>
+          <itemPath>inc/thrift/async/TEvhttpServer.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="concurrency" displayName="concurrency" projectFiles="true">
+          <itemPath>inc/thrift/concurrency/BoostThreadFactory.h</itemPath>
+          <itemPath>inc/thrift/concurrency/Exception.h</itemPath>
+          <itemPath>inc/thrift/concurrency/FunctionRunner.h</itemPath>
+          <itemPath>inc/thrift/concurrency/Monitor.h</itemPath>
+          <itemPath>inc/thrift/concurrency/Mutex.h</itemPath>
+          <itemPath>inc/thrift/concurrency/PlatformThreadFactory.h</itemPath>
+          <itemPath>inc/thrift/concurrency/PosixThreadFactory.h</itemPath>
+          <itemPath>inc/thrift/concurrency/StdThreadFactory.h</itemPath>
+          <itemPath>inc/thrift/concurrency/Thread.h</itemPath>
+          <itemPath>inc/thrift/concurrency/ThreadManager.h</itemPath>
+          <itemPath>inc/thrift/concurrency/TimerManager.h</itemPath>
+          <itemPath>inc/thrift/concurrency/Util.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="processor" displayName="processor" projectFiles="true">
+          <itemPath>inc/thrift/processor/PeekProcessor.h</itemPath>
+          <itemPath>inc/thrift/processor/StatsProcessor.h</itemPath>
+          <itemPath>inc/thrift/processor/TMultiplexedProcessor.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="protocol" displayName="protocol" projectFiles="true">
+          <itemPath>inc/thrift/protocol/TBase64Utils.h</itemPath>
+          <itemPath>inc/thrift/protocol/TBinaryProtocol.h</itemPath>
+          <itemPath>inc/thrift/protocol/TBinaryProtocol.tcc</itemPath>
+          <itemPath>inc/thrift/protocol/TCompactProtocol.h</itemPath>
+          <itemPath>inc/thrift/protocol/TCompactProtocol.tcc</itemPath>
+          <itemPath>inc/thrift/protocol/TDebugProtocol.h</itemPath>
+          <itemPath>inc/thrift/protocol/THeaderProtocol.h</itemPath>
+          <itemPath>inc/thrift/protocol/TJSONProtocol.h</itemPath>
+          <itemPath>inc/thrift/protocol/TMultiplexedProtocol.h</itemPath>
+          <itemPath>inc/thrift/protocol/TProtocol.h</itemPath>
+          <itemPath>inc/thrift/protocol/TProtocolDecorator.h</itemPath>
+          <itemPath>inc/thrift/protocol/TProtocolException.h</itemPath>
+          <itemPath>inc/thrift/protocol/TProtocolTap.h</itemPath>
+          <itemPath>inc/thrift/protocol/TProtocolTypes.h</itemPath>
+          <itemPath>inc/thrift/protocol/TVirtualProtocol.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="qt" displayName="qt" projectFiles="true">
+          <itemPath>inc/thrift/qt/CMakeLists.txt</itemPath>
+          <itemPath>inc/thrift/qt/TQIODeviceTransport.h</itemPath>
+          <itemPath>inc/thrift/qt/TQTcpServer.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="server" displayName="server" projectFiles="true">
+          <itemPath>inc/thrift/server/TConnectedClient.h</itemPath>
+          <itemPath>inc/thrift/server/TNonblockingServer.h</itemPath>
+          <itemPath>inc/thrift/server/TServer.h</itemPath>
+          <itemPath>inc/thrift/server/TServerFramework.h</itemPath>
+          <itemPath>inc/thrift/server/TSimpleServer.h</itemPath>
+          <itemPath>inc/thrift/server/TThreadPoolServer.h</itemPath>
+          <itemPath>inc/thrift/server/TThreadedServer.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="transport" displayName="transport" projectFiles="true">
+          <itemPath>inc/thrift/transport/PlatformSocket.h</itemPath>
+          <itemPath>inc/thrift/transport/TBufferTransports.h</itemPath>
+          <itemPath>inc/thrift/transport/TFDTransport.h</itemPath>
+          <itemPath>inc/thrift/transport/TFileTransport.h</itemPath>
+          <itemPath>inc/thrift/transport/THeaderTransport.h</itemPath>
+          <itemPath>inc/thrift/transport/THttpClient.h</itemPath>
+          <itemPath>inc/thrift/transport/THttpServer.h</itemPath>
+          <itemPath>inc/thrift/transport/THttpTransport.h</itemPath>
+          <itemPath>inc/thrift/transport/TPipe.h</itemPath>
+          <itemPath>inc/thrift/transport/TPipeServer.h</itemPath>
+          <itemPath>inc/thrift/transport/TSSLServerSocket.h</itemPath>
+          <itemPath>inc/thrift/transport/TSSLSocket.h</itemPath>
+          <itemPath>inc/thrift/transport/TServerSocket.h</itemPath>
+          <itemPath>inc/thrift/transport/TServerTransport.h</itemPath>
+          <itemPath>inc/thrift/transport/TShortReadTransport.h</itemPath>
+          <itemPath>inc/thrift/transport/TSimpleFileTransport.h</itemPath>
+          <itemPath>inc/thrift/transport/TSocket.h</itemPath>
+          <itemPath>inc/thrift/transport/TSocketPool.h</itemPath>
+          <itemPath>inc/thrift/transport/TTransport.h</itemPath>
+          <itemPath>inc/thrift/transport/TTransportException.h</itemPath>
+          <itemPath>inc/thrift/transport/TTransportUtils.h</itemPath>
+          <itemPath>inc/thrift/transport/TVirtualTransport.h</itemPath>
+          <itemPath>inc/thrift/transport/TZlibTransport.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="windows" displayName="windows" projectFiles="true">
+          <itemPath>inc/thrift/windows/GetTimeOfDay.h</itemPath>
+          <itemPath>inc/thrift/windows/Operators.h</itemPath>
+          <itemPath>inc/thrift/windows/OverlappedSubmissionThread.h</itemPath>
+          <itemPath>inc/thrift/windows/SocketPair.h</itemPath>
+          <itemPath>inc/thrift/windows/Sync.h</itemPath>
+          <itemPath>inc/thrift/windows/TWinsockSingleton.h</itemPath>
+          <itemPath>inc/thrift/windows/WinFcntl.h</itemPath>
+          <itemPath>inc/thrift/windows/config.h</itemPath>
+        </logicalFolder>
+        <itemPath>inc/thrift/TApplicationException.h</itemPath>
+        <itemPath>inc/thrift/TBase.h</itemPath>
+        <itemPath>inc/thrift/TDispatchProcessor.h</itemPath>
+        <itemPath>inc/thrift/TLogging.h</itemPath>
+        <itemPath>inc/thrift/TOutput.h</itemPath>
+        <itemPath>inc/thrift/TProcessor.h</itemPath>
+        <itemPath>inc/thrift/TToString.h</itemPath>
+        <itemPath>inc/thrift/Thrift.h</itemPath>
+        <itemPath>inc/thrift/config.h</itemPath>
+        <itemPath>inc/thrift/cxxfunctional.h</itemPath>
+        <itemPath>inc/thrift/thrift-config.h</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="src" displayName="src" projectFiles="true">
+      <logicalFolder name="thrift" displayName="thrift" projectFiles="true">
+        <logicalFolder name="async" displayName="async" projectFiles="true">
+          <itemPath>src/thrift/async/TAsyncChannel.cpp</itemPath>
+          <itemPath>src/thrift/async/TAsyncProtocolProcessor.cpp</itemPath>
+          <itemPath>src/thrift/async/TConcurrentClientSyncInfo.cpp</itemPath>
+          <itemPath>src/thrift/async/TEvhttpClientChannel.cpp</itemPath>
+          <itemPath>src/thrift/async/TEvhttpServer.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="concurrency" displayName="concurrency" projectFiles="true">
+          <itemPath>src/thrift/concurrency/BoostMonitor.cpp</itemPath>
+          <itemPath>src/thrift/concurrency/BoostMutex.cpp</itemPath>
+          <itemPath>src/thrift/concurrency/BoostThreadFactory.cpp</itemPath>
+          <itemPath>src/thrift/concurrency/Monitor.cpp</itemPath>
+          <itemPath>src/thrift/concurrency/Mutex.cpp</itemPath>
+          <itemPath>src/thrift/concurrency/PosixThreadFactory.cpp</itemPath>
+          <itemPath>src/thrift/concurrency/StdMonitor.cpp</itemPath>
+          <itemPath>src/thrift/concurrency/StdMutex.cpp</itemPath>
+          <itemPath>src/thrift/concurrency/StdThreadFactory.cpp</itemPath>
+          <itemPath>src/thrift/concurrency/ThreadManager.cpp</itemPath>
+          <itemPath>src/thrift/concurrency/TimerManager.cpp</itemPath>
+          <itemPath>src/thrift/concurrency/Util.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="processor" displayName="processor" projectFiles="true">
+          <itemPath>src/thrift/processor/PeekProcessor.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="protocol" displayName="protocol" projectFiles="true">
+          <itemPath>src/thrift/protocol/TBase64Utils.cpp</itemPath>
+          <itemPath>src/thrift/protocol/TBinaryProtocol.tcc</itemPath>
+          <itemPath>src/thrift/protocol/TCompactProtocol.tcc</itemPath>
+          <itemPath>src/thrift/protocol/TDebugProtocol.cpp</itemPath>
+          <itemPath>src/thrift/protocol/THeaderProtocol.cpp</itemPath>
+          <itemPath>src/thrift/protocol/TJSONProtocol.cpp</itemPath>
+          <itemPath>src/thrift/protocol/TMultiplexedProtocol.cpp</itemPath>
+          <itemPath>src/thrift/protocol/TProtocol.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="qt" displayName="qt" projectFiles="true">
+          <itemPath>src/thrift/qt/CMakeLists.txt</itemPath>
+          <itemPath>src/thrift/qt/TQIODeviceTransport.cpp</itemPath>
+          <itemPath>src/thrift/qt/TQTcpServer.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="server" displayName="server" projectFiles="true">
+          <itemPath>src/thrift/server/TConnectedClient.cpp</itemPath>
+          <itemPath>src/thrift/server/TNonblockingServer.cpp</itemPath>
+          <itemPath>src/thrift/server/TServer.cpp</itemPath>
+          <itemPath>src/thrift/server/TServerFramework.cpp</itemPath>
+          <itemPath>src/thrift/server/TSimpleServer.cpp</itemPath>
+          <itemPath>src/thrift/server/TThreadPoolServer.cpp</itemPath>
+          <itemPath>src/thrift/server/TThreadedServer.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="transport" displayName="transport" projectFiles="true">
+          <itemPath>src/thrift/transport/TBufferTransports.cpp</itemPath>
+          <itemPath>src/thrift/transport/TFDTransport.cpp</itemPath>
+          <itemPath>src/thrift/transport/TFileTransport.cpp</itemPath>
+          <itemPath>src/thrift/transport/THeaderTransport.cpp</itemPath>
+          <itemPath>src/thrift/transport/THttpClient.cpp</itemPath>
+          <itemPath>src/thrift/transport/THttpServer.cpp</itemPath>
+          <itemPath>src/thrift/transport/THttpTransport.cpp</itemPath>
+          <itemPath>src/thrift/transport/TPipe.cpp</itemPath>
+          <itemPath>src/thrift/transport/TPipeServer.cpp</itemPath>
+          <itemPath>src/thrift/transport/TSSLServerSocket.cpp</itemPath>
+          <itemPath>src/thrift/transport/TSSLSocket.cpp</itemPath>
+          <itemPath>src/thrift/transport/TServerSocket.cpp</itemPath>
+          <itemPath>src/thrift/transport/TSimpleFileTransport.cpp</itemPath>
+          <itemPath>src/thrift/transport/TSocket.cpp</itemPath>
+          <itemPath>src/thrift/transport/TSocketPool.cpp</itemPath>
+          <itemPath>src/thrift/transport/TTransportException.cpp</itemPath>
+          <itemPath>src/thrift/transport/TTransportUtils.cpp</itemPath>
+          <itemPath>src/thrift/transport/TZlibTransport.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="windows" displayName="windows" projectFiles="true">
+          <itemPath>src/thrift/windows/GetTimeOfDay.cpp</itemPath>
+          <itemPath>src/thrift/windows/OverlappedSubmissionThread.cpp</itemPath>
+          <itemPath>src/thrift/windows/SocketPair.cpp</itemPath>
+          <itemPath>src/thrift/windows/TWinsockSingleton.cpp</itemPath>
+          <itemPath>src/thrift/windows/WinFcntl.cpp</itemPath>
+        </logicalFolder>
+        <itemPath>src/thrift/TApplicationException.cpp</itemPath>
+        <itemPath>src/thrift/TOutput.cpp</itemPath>
+        <itemPath>src/thrift/VirtualProfiling.cpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="3">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>inc</pElem>
+            <pElem>../LibEvent/inc</pElem>
+            <pElem>../Boost/inc</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>HAVE_CONFIG_H</Elem>
+          </preprocessorList>
+        </ccTool>
+        <archiverTool>
+          <output>lib/libapachethriftd.a</output>
+        </archiverTool>
+      </compileType>
+      <item path="inc/thrift/TApplicationException.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/TBase.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/TDispatchProcessor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/TLogging.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/TOutput.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/TProcessor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/TToString.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/Thrift.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/async/TAsyncBufferProcessor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/async/TAsyncChannel.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/async/TAsyncDispatchProcessor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/async/TAsyncProcessor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/async/TAsyncProtocolProcessor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/async/TConcurrentClientSyncInfo.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/async/TEvhttpClientChannel.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/async/TEvhttpServer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/BoostThreadFactory.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/Exception.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/FunctionRunner.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/Monitor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/Mutex.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/PlatformThreadFactory.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/PosixThreadFactory.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/StdThreadFactory.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/Thread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/ThreadManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/TimerManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/Util.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/cxxfunctional.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/processor/PeekProcessor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/processor/StatsProcessor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/processor/TMultiplexedProcessor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TBase64Utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TBinaryProtocol.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TBinaryProtocol.tcc"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TCompactProtocol.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TCompactProtocol.tcc"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TDebugProtocol.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/THeaderProtocol.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TJSONProtocol.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TMultiplexedProtocol.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TProtocol.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TProtocolDecorator.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TProtocolException.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TProtocolTap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TProtocolTypes.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TVirtualProtocol.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/qt/CMakeLists.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/qt/TQIODeviceTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/qt/TQTcpServer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/server/TConnectedClient.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/server/TNonblockingServer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/server/TServer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/server/TServerFramework.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/server/TSimpleServer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/server/TThreadPoolServer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/server/TThreadedServer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/thrift-config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/PlatformSocket.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TBufferTransports.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TFDTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TFileTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/THeaderTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/THttpClient.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/THttpServer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/THttpTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TPipe.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TPipeServer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TSSLServerSocket.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TSSLSocket.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TServerSocket.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TServerTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TShortReadTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TSimpleFileTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TSocket.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TSocketPool.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TTransport.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TTransportException.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TTransportUtils.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TVirtualTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TZlibTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/windows/GetTimeOfDay.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/windows/Operators.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/windows/OverlappedSubmissionThread.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/windows/SocketPair.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/windows/Sync.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/windows/TWinsockSingleton.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/windows/WinFcntl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/windows/config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/thrift/TApplicationException.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/TOutput.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/thrift/VirtualProfiling.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/thrift/async/TAsyncChannel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/thrift/async/TAsyncProtocolProcessor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/async/TConcurrentClientSyncInfo.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/BoostMonitor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/BoostMutex.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/BoostThreadFactory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/Monitor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/Mutex.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/PosixThreadFactory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/StdMonitor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/StdMutex.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/StdThreadFactory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/ThreadManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/TimerManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/Util.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/thrift/processor/PeekProcessor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/protocol/TBase64Utils.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/protocol/TBinaryProtocol.tcc"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/protocol/TCompactProtocol.tcc"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/protocol/TDebugProtocol.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/protocol/THeaderProtocol.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/protocol/TJSONProtocol.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/protocol/TMultiplexedProtocol.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/protocol/TProtocol.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/thrift/qt/CMakeLists.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/thrift/server/TConnectedClient.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/server/TNonblockingServer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/server/TServer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/thrift/server/TServerFramework.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/server/TSimpleServer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/server/TThreadPoolServer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/server/TThreadedServer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TBufferTransports.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TFDTransport.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/THeaderTransport.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TPipe.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TPipeServer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TSSLServerSocket.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TSSLSocket.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TServerSocket.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TSimpleFileTransport.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TSocket.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TSocketPool.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TTransportException.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TTransportUtils.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TZlibTransport.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="3">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>6</developmentMode>
+          <incDir>
+            <pElem>inc</pElem>
+            <pElem>../LibEvent/inc</pElem>
+            <pElem>../Boost/inc</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>HAVE_CONFIG_H</Elem>
+            <Elem>NDEBUG</Elem>
+          </preprocessorList>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <archiverTool>
+          <output>lib/libapachethrift.a</output>
+        </archiverTool>
+      </compileType>
+      <item path="inc/thrift/TApplicationException.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/TBase.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/TDispatchProcessor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/TLogging.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/TOutput.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/TProcessor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/TToString.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/Thrift.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/async/TAsyncBufferProcessor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/async/TAsyncChannel.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/async/TAsyncDispatchProcessor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/async/TAsyncProcessor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/async/TAsyncProtocolProcessor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/async/TConcurrentClientSyncInfo.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/async/TEvhttpClientChannel.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/async/TEvhttpServer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/BoostThreadFactory.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/Exception.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/FunctionRunner.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/Monitor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/Mutex.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/PlatformThreadFactory.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/PosixThreadFactory.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/StdThreadFactory.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/Thread.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/ThreadManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/TimerManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/concurrency/Util.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/cxxfunctional.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/processor/PeekProcessor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/processor/StatsProcessor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/processor/TMultiplexedProcessor.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TBase64Utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TBinaryProtocol.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TBinaryProtocol.tcc"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TCompactProtocol.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TCompactProtocol.tcc"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TDebugProtocol.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/THeaderProtocol.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TJSONProtocol.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TMultiplexedProtocol.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TProtocol.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TProtocolDecorator.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TProtocolException.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TProtocolTap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TProtocolTypes.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/protocol/TVirtualProtocol.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/qt/CMakeLists.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/qt/TQIODeviceTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/qt/TQTcpServer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/server/TConnectedClient.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/server/TNonblockingServer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/server/TServer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/server/TServerFramework.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/server/TSimpleServer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/server/TThreadPoolServer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/server/TThreadedServer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/thrift-config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/PlatformSocket.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TBufferTransports.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TFDTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TFileTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/THeaderTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/THttpClient.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/THttpServer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/THttpTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TPipe.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TPipeServer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TSSLServerSocket.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TSSLSocket.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TServerSocket.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TServerTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TShortReadTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TSimpleFileTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TSocket.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TSocketPool.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TTransport.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TTransportException.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TTransportUtils.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TVirtualTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TZlibTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/windows/GetTimeOfDay.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/windows/Operators.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/windows/OverlappedSubmissionThread.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/windows/SocketPair.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/windows/Sync.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/windows/TWinsockSingleton.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/windows/WinFcntl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="inc/thrift/windows/config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/thrift/TApplicationException.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/TOutput.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/thrift/VirtualProfiling.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/thrift/async/TAsyncChannel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/thrift/async/TAsyncProtocolProcessor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/async/TConcurrentClientSyncInfo.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/BoostMonitor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/BoostMutex.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/BoostThreadFactory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/Monitor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/Mutex.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/PosixThreadFactory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/StdMonitor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/StdMutex.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/StdThreadFactory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/ThreadManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/TimerManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/concurrency/Util.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/thrift/processor/PeekProcessor.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/protocol/TBase64Utils.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/protocol/TBinaryProtocol.tcc"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/protocol/TCompactProtocol.tcc"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/protocol/TDebugProtocol.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/protocol/THeaderProtocol.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/protocol/TJSONProtocol.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/protocol/TMultiplexedProtocol.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/protocol/TProtocol.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/thrift/qt/CMakeLists.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/thrift/server/TConnectedClient.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/server/TNonblockingServer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/server/TServer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/thrift/server/TServerFramework.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/server/TSimpleServer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/server/TThreadPoolServer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/server/TThreadedServer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TBufferTransports.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TFDTransport.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/THeaderTransport.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TPipe.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TPipeServer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TSSLServerSocket.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TSSLSocket.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TServerSocket.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TSimpleFileTransport.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TSocket.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TSocketPool.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TTransportException.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TTransportUtils.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TZlibTransport.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

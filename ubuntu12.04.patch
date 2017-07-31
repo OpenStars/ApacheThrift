@@ -1,0 +1,79 @@
+diff -u -r inc/thrift/config.h /srv/chroot/precise/home/code/contribs/UPThrift/inc/thrift/config.h
+--- inc/thrift/config.h	2016-05-18 15:25:02.000000000 +0700
++++ /srv/chroot/precise/home/code/contribs/UPThrift/inc/thrift/config.h	2017-02-19 14:44:35.888975954 +0700
+@@ -5,6 +5,22 @@
+ #ifndef CONFIG_H
+ #define CONFIG_H
+ 
++/* Minimum of signed integral types.  */
++# define INT8_MIN		(-128)
++# define INT16_MIN		(-32767-1)
++# define INT32_MIN		(-2147483647-1)
++# define INT64_MIN		(-__INT64_C(9223372036854775807)-1)
++/* Maximum of signed integral types.  */
++# define INT8_MAX		(127)
++# define INT16_MAX		(32767)
++# define INT32_MAX		(2147483647)
++# define INT64_MAX		(__INT64_C(9223372036854775807))
++
++/* Maximum of unsigned integral types.  */
++# define UINT8_MAX		(255)
++# define UINT16_MAX		(65535)
++# define UINT32_MAX		(4294967295U)
++# define UINT64_MAX		(__UINT64_C(18446744073709551615))
+ 
+ /* Define if the AI_ADDRCONFIG symbol is unavailable */
+ /* #undef AI_ADDRCONFIG */
+@@ -13,13 +29,13 @@
+ #define ARITHMETIC_RIGHT_SHIFT 1
+ 
+ /* Defines automake version */
+-#define AUTOMAKE_VERSION 1.15
++#define AUTOMAKE_VERSION 1.11.3
+ 
+ /* Use *.h extension for parser header file */
+-/* #undef BISON_USE_PARSER_H_EXTENSION */
++#define BISON_USE_PARSER_H_EXTENSION 1
+ 
+ /* Defines bison version */
+-#define BISON_VERSION 3.0.4
++#define BISON_VERSION 2.5
+ 
+ /* Define to one of `_getb67', `GETB67', `getb67' for Cray-2 and Cray-YMP
+    systems. This function is required for `alloca.c' support on those systems.
+@@ -43,7 +59,7 @@
+ #define HAVE_ARPA_INET_H 1
+ 
+ /* define if the Boost library is available */
+-#define HAVE_BOOST /**/
++/* #undef HAVE_BOOST */
+ 
+ /* Define to 1 if you have the `bzero' function. */
+ #define HAVE_BZERO 1
+@@ -52,7 +68,7 @@
+ #define HAVE_CLOCK_GETTIME 1
+ 
+ /* define if the compiler supports basic C++11 syntax */
+-#define HAVE_CXX11 1
++/* #undef HAVE_CXX11 */
+ 
+ /* Define to 1 if you have the declaration of `strerror_r', and to 0 if you
+    don't. */
+@@ -86,7 +102,7 @@
+ #define HAVE_INET_NTOA 1
+ 
+ /* Define to 1 if you have the <inttypes.h> header file. */
+-#define HAVE_INTTYPES_H 1
++#define HAVE_INTTYPES_H 0
+ 
+ /* Define to 1 if you have the <lauxlib.h> header file. */
+ /* #undef HAVE_LAUXLIB_H */
+@@ -194,7 +210,7 @@
+ /* #undef HAVE_STAT_EMPTY_STRING_BUG */
+ 
+ /* Define to 1 if stdbool.h conforms to C99. */
+-/* #undef HAVE_STDBOOL_H */
++#define HAVE_STDBOOL_H 1
+ 
+ /* Define to 1 if you have the <stddef.h> header file. */
+ #define HAVE_STDDEF_H 1
