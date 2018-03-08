@@ -1,1 +1,1 @@
-thrift-0.10.0/lib/cpp/src
+thrift-source/lib/cpp/src
