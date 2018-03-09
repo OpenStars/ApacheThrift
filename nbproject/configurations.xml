@@ -183,11 +183,11 @@
           <itemPath>src/thrift/transport/THttpClient.cpp</itemPath>
           <itemPath>src/thrift/transport/THttpServer.cpp</itemPath>
           <itemPath>src/thrift/transport/THttpTransport.cpp</itemPath>
-          <itemPath>../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingSSLServerSocket.cpp</itemPath>
-          <itemPath>../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingSSLServerSocket.h</itemPath>
-          <itemPath>../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerSocket.cpp</itemPath>
-          <itemPath>../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerSocket.h</itemPath>
-          <itemPath>../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerTransport.h</itemPath>
+          <itemPath>src/thrift/transport/TNonblockingSSLServerSocket.cpp</itemPath>
+          <itemPath>src/thrift/transport/TNonblockingSSLServerSocket.h</itemPath>
+          <itemPath>src/thrift/transport/TNonblockingServerSocket.cpp</itemPath>
+          <itemPath>src/thrift/transport/TNonblockingServerSocket.h</itemPath>
+          <itemPath>src/thrift/transport/TNonblockingServerTransport.h</itemPath>
           <itemPath>src/thrift/transport/TPipe.cpp</itemPath>
           <itemPath>src/thrift/transport/TPipeServer.cpp</itemPath>
           <itemPath>src/thrift/transport/TSSLServerSocket.cpp</itemPath>
@@ -248,27 +248,27 @@
           <output>lib/libapachethriftd.a</output>
         </archiverTool>
       </compileType>
-      <item path="../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingSSLServerSocket.cpp"
+      <item path="src/thrift/transport/TNonblockingSSLServerSocket.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingSSLServerSocket.h"
+      <item path="src/thrift/transport/TNonblockingSSLServerSocket.h"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerSocket.cpp"
+      <item path="src/thrift/transport/TNonblockingServerSocket.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerSocket.h"
+      <item path="src/thrift/transport/TNonblockingServerSocket.h"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerTransport.h"
+      <item path="src/thrift/transport/TNonblockingServerTransport.h"
             ex="false"
             tool="3"
             flavor2="0">
@@ -848,27 +848,27 @@
           <output>lib/libapachethrift.a</output>
         </archiverTool>
       </compileType>
-      <item path="../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingSSLServerSocket.cpp"
+      <item path="src/thrift/transport/TNonblockingSSLServerSocket.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingSSLServerSocket.h"
+      <item path="src/thrift/transport/TNonblockingSSLServerSocket.h"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerSocket.cpp"
+      <item path="src/thrift/transport/TNonblockingServerSocket.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerSocket.h"
+      <item path="src/thrift/transport/TNonblockingServerSocket.h"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerTransport.h"
+      <item path="src/thrift/transport/TNonblockingServerTransport.h"
             ex="false"
             tool="3"
             flavor2="0">

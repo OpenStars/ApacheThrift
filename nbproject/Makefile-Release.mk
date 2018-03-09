@@ -35,8 +35,6 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/_ext/bdeb6242/TNonblockingSSLServerSocket.o \
-	${OBJECTDIR}/_ext/bdeb6242/TNonblockingServerSocket.o \
 	${OBJECTDIR}/src/thrift/TApplicationException.o \
 	${OBJECTDIR}/src/thrift/TOutput.o \
 	${OBJECTDIR}/src/thrift/VirtualProfiling.o \
@@ -69,6 +67,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/src/thrift/transport/TBufferTransports.o \
 	${OBJECTDIR}/src/thrift/transport/TFDTransport.o \
 	${OBJECTDIR}/src/thrift/transport/THeaderTransport.o \
+	${OBJECTDIR}/src/thrift/transport/TNonblockingSSLServerSocket.o \
+	${OBJECTDIR}/src/thrift/transport/TNonblockingServerSocket.o \
 	${OBJECTDIR}/src/thrift/transport/TPipe.o \
 	${OBJECTDIR}/src/thrift/transport/TPipeServer.o \
 	${OBJECTDIR}/src/thrift/transport/TSSLServerSocket.o \
@@ -107,16 +107,6 @@ lib/libapachethrift.a: ${OBJECTFILES}
 	${RM} lib/libapachethrift.a
 	${AR} -rv lib/libapachethrift.a ${OBJECTFILES} 
 	$(RANLIB) lib/libapachethrift.a
-
-${OBJECTDIR}/_ext/bdeb6242/TNonblockingSSLServerSocket.o: ../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingSSLServerSocket.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/bdeb6242
-	${RM} "$@.d"
-	$(COMPILE.cc) -O3 -DHAVE_CONFIG_H -DNDEBUG -Iinc -I../LibEvent/inc -I../Boost/inc -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/bdeb6242/TNonblockingSSLServerSocket.o ../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingSSLServerSocket.cpp
-
-${OBJECTDIR}/_ext/bdeb6242/TNonblockingServerSocket.o: ../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerSocket.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/bdeb6242
-	${RM} "$@.d"
-	$(COMPILE.cc) -O3 -DHAVE_CONFIG_H -DNDEBUG -Iinc -I../LibEvent/inc -I../Boost/inc -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/bdeb6242/TNonblockingServerSocket.o ../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerSocket.cpp
 
 ${OBJECTDIR}/src/thrift/TApplicationException.o: src/thrift/TApplicationException.cpp
 	${MKDIR} -p ${OBJECTDIR}/src/thrift
@@ -277,6 +267,16 @@ ${OBJECTDIR}/src/thrift/transport/THeaderTransport.o: src/thrift/transport/THead
 	${MKDIR} -p ${OBJECTDIR}/src/thrift/transport
 	${RM} "$@.d"
 	$(COMPILE.cc) -O3 -DHAVE_CONFIG_H -DNDEBUG -Iinc -I../LibEvent/inc -I../Boost/inc -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/thrift/transport/THeaderTransport.o src/thrift/transport/THeaderTransport.cpp
+
+${OBJECTDIR}/src/thrift/transport/TNonblockingSSLServerSocket.o: src/thrift/transport/TNonblockingSSLServerSocket.cpp
+	${MKDIR} -p ${OBJECTDIR}/src/thrift/transport
+	${RM} "$@.d"
+	$(COMPILE.cc) -O3 -DHAVE_CONFIG_H -DNDEBUG -Iinc -I../LibEvent/inc -I../Boost/inc -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/thrift/transport/TNonblockingSSLServerSocket.o src/thrift/transport/TNonblockingSSLServerSocket.cpp
+
+${OBJECTDIR}/src/thrift/transport/TNonblockingServerSocket.o: src/thrift/transport/TNonblockingServerSocket.cpp
+	${MKDIR} -p ${OBJECTDIR}/src/thrift/transport
+	${RM} "$@.d"
+	$(COMPILE.cc) -O3 -DHAVE_CONFIG_H -DNDEBUG -Iinc -I../LibEvent/inc -I../Boost/inc -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/thrift/transport/TNonblockingServerSocket.o src/thrift/transport/TNonblockingServerSocket.cpp
 
 ${OBJECTDIR}/src/thrift/transport/TPipe.o: src/thrift/transport/TPipe.cpp
 	${MKDIR} -p ${OBJECTDIR}/src/thrift/transport
