@@ -35,15 +35,14 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/_ext/bdeb6242/TNonblockingSSLServerSocket.o \
+	${OBJECTDIR}/_ext/bdeb6242/TNonblockingServerSocket.o \
 	${OBJECTDIR}/src/thrift/TApplicationException.o \
 	${OBJECTDIR}/src/thrift/TOutput.o \
 	${OBJECTDIR}/src/thrift/VirtualProfiling.o \
 	${OBJECTDIR}/src/thrift/async/TAsyncChannel.o \
 	${OBJECTDIR}/src/thrift/async/TAsyncProtocolProcessor.o \
 	${OBJECTDIR}/src/thrift/async/TConcurrentClientSyncInfo.o \
-	${OBJECTDIR}/src/thrift/concurrency/BoostMonitor.o \
-	${OBJECTDIR}/src/thrift/concurrency/BoostMutex.o \
-	${OBJECTDIR}/src/thrift/concurrency/BoostThreadFactory.o \
 	${OBJECTDIR}/src/thrift/concurrency/Monitor.o \
 	${OBJECTDIR}/src/thrift/concurrency/Mutex.o \
 	${OBJECTDIR}/src/thrift/concurrency/PosixThreadFactory.o \
@@ -109,6 +108,16 @@ lib/libapachethriftd.a: ${OBJECTFILES}
 	${AR} -rv lib/libapachethriftd.a ${OBJECTFILES} 
 	$(RANLIB) lib/libapachethriftd.a
 
+${OBJECTDIR}/_ext/bdeb6242/TNonblockingSSLServerSocket.o: ../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingSSLServerSocket.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/bdeb6242
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -DHAVE_CONFIG_H -Iinc -I../LibEvent/inc -I../Boost/inc -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/bdeb6242/TNonblockingSSLServerSocket.o ../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingSSLServerSocket.cpp
+
+${OBJECTDIR}/_ext/bdeb6242/TNonblockingServerSocket.o: ../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerSocket.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/bdeb6242
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -DHAVE_CONFIG_H -Iinc -I../LibEvent/inc -I../Boost/inc -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/bdeb6242/TNonblockingServerSocket.o ../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerSocket.cpp
+
 ${OBJECTDIR}/src/thrift/TApplicationException.o: src/thrift/TApplicationException.cpp
 	${MKDIR} -p ${OBJECTDIR}/src/thrift
 	${RM} "$@.d"
@@ -138,21 +147,6 @@ ${OBJECTDIR}/src/thrift/async/TConcurrentClientSyncInfo.o: src/thrift/async/TCon
 	${MKDIR} -p ${OBJECTDIR}/src/thrift/async
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -DHAVE_CONFIG_H -Iinc -I../LibEvent/inc -I../Boost/inc -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/thrift/async/TConcurrentClientSyncInfo.o src/thrift/async/TConcurrentClientSyncInfo.cpp
-
-${OBJECTDIR}/src/thrift/concurrency/BoostMonitor.o: src/thrift/concurrency/BoostMonitor.cpp
-	${MKDIR} -p ${OBJECTDIR}/src/thrift/concurrency
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -DHAVE_CONFIG_H -Iinc -I../LibEvent/inc -I../Boost/inc -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/thrift/concurrency/BoostMonitor.o src/thrift/concurrency/BoostMonitor.cpp
-
-${OBJECTDIR}/src/thrift/concurrency/BoostMutex.o: src/thrift/concurrency/BoostMutex.cpp
-	${MKDIR} -p ${OBJECTDIR}/src/thrift/concurrency
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -DHAVE_CONFIG_H -Iinc -I../LibEvent/inc -I../Boost/inc -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/thrift/concurrency/BoostMutex.o src/thrift/concurrency/BoostMutex.cpp
-
-${OBJECTDIR}/src/thrift/concurrency/BoostThreadFactory.o: src/thrift/concurrency/BoostThreadFactory.cpp
-	${MKDIR} -p ${OBJECTDIR}/src/thrift/concurrency
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -DHAVE_CONFIG_H -Iinc -I../LibEvent/inc -I../Boost/inc -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/thrift/concurrency/BoostThreadFactory.o src/thrift/concurrency/BoostThreadFactory.cpp
 
 ${OBJECTDIR}/src/thrift/concurrency/Monitor.o: src/thrift/concurrency/Monitor.cpp
 	${MKDIR} -p ${OBJECTDIR}/src/thrift/concurrency

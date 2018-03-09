@@ -76,6 +76,9 @@
           <itemPath>inc/thrift/transport/THttpClient.h</itemPath>
           <itemPath>inc/thrift/transport/THttpServer.h</itemPath>
           <itemPath>inc/thrift/transport/THttpTransport.h</itemPath>
+          <itemPath>inc/thrift/transport/TNonblockingSSLServerSocket.h</itemPath>
+          <itemPath>inc/thrift/transport/TNonblockingServerSocket.h</itemPath>
+          <itemPath>inc/thrift/transport/TNonblockingServerTransport.h</itemPath>
           <itemPath>inc/thrift/transport/TPipe.h</itemPath>
           <itemPath>inc/thrift/transport/TPipeServer.h</itemPath>
           <itemPath>inc/thrift/transport/TSSLServerSocket.h</itemPath>
@@ -111,7 +114,6 @@
         <itemPath>inc/thrift/TToString.h</itemPath>
         <itemPath>inc/thrift/Thrift.h</itemPath>
         <itemPath>inc/thrift/config.h</itemPath>
-        <itemPath>inc/thrift/cxxfunctional.h</itemPath>
         <itemPath>inc/thrift/thrift-config.h</itemPath>
       </logicalFolder>
     </logicalFolder>
@@ -181,6 +183,11 @@
           <itemPath>src/thrift/transport/THttpClient.cpp</itemPath>
           <itemPath>src/thrift/transport/THttpServer.cpp</itemPath>
           <itemPath>src/thrift/transport/THttpTransport.cpp</itemPath>
+          <itemPath>../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingSSLServerSocket.cpp</itemPath>
+          <itemPath>../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingSSLServerSocket.h</itemPath>
+          <itemPath>../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerSocket.cpp</itemPath>
+          <itemPath>../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerSocket.h</itemPath>
+          <itemPath>../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerTransport.h</itemPath>
           <itemPath>src/thrift/transport/TPipe.cpp</itemPath>
           <itemPath>src/thrift/transport/TPipeServer.cpp</itemPath>
           <itemPath>src/thrift/transport/TSSLServerSocket.cpp</itemPath>
@@ -216,6 +223,7 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
+    <itemPath>buildcompiler.sh</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -240,6 +248,33 @@
           <output>lib/libapachethriftd.a</output>
         </archiverTool>
       </compileType>
+      <item path="../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingSSLServerSocket.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingSSLServerSocket.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerSocket.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerSocket.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="buildcompiler.sh" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="inc/thrift/TApplicationException.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="inc/thrift/TBase.h" ex="false" tool="3" flavor2="0">
@@ -333,8 +368,6 @@
       <item path="inc/thrift/concurrency/Util.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="inc/thrift/config.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="inc/thrift/cxxfunctional.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="inc/thrift/processor/PeekProcessor.h"
             ex="false"
@@ -491,6 +524,21 @@
             tool="3"
             flavor2="0">
       </item>
+      <item path="inc/thrift/transport/TNonblockingSSLServerSocket.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TNonblockingServerSocket.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TNonblockingServerTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="inc/thrift/transport/TPipe.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="inc/thrift/transport/TPipeServer.h" ex="false" tool="3" flavor2="0">
@@ -587,21 +635,6 @@
             flavor2="0">
       </item>
       <item path="src/thrift/async/TConcurrentClientSyncInfo.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="src/thrift/concurrency/BoostMonitor.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="src/thrift/concurrency/BoostMutex.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="src/thrift/concurrency/BoostThreadFactory.cpp"
             ex="false"
             tool="1"
             flavor2="0">
@@ -815,6 +848,33 @@
           <output>lib/libapachethrift.a</output>
         </archiverTool>
       </compileType>
+      <item path="../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingSSLServerSocket.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingSSLServerSocket.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerSocket.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerSocket.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../services/contribs/ApacheThrift/src/thrift/transport/TNonblockingServerTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="buildcompiler.sh" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="inc/thrift/TApplicationException.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="inc/thrift/TBase.h" ex="false" tool="3" flavor2="0">
@@ -908,8 +968,6 @@
       <item path="inc/thrift/concurrency/Util.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="inc/thrift/config.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="inc/thrift/cxxfunctional.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="inc/thrift/processor/PeekProcessor.h"
             ex="false"
@@ -1066,6 +1124,21 @@
             tool="3"
             flavor2="0">
       </item>
+      <item path="inc/thrift/transport/TNonblockingSSLServerSocket.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TNonblockingServerSocket.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="inc/thrift/transport/TNonblockingServerTransport.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="inc/thrift/transport/TPipe.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="inc/thrift/transport/TPipeServer.h" ex="false" tool="3" flavor2="0">
@@ -1162,21 +1235,6 @@
             flavor2="0">
       </item>
       <item path="src/thrift/async/TConcurrentClientSyncInfo.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="src/thrift/concurrency/BoostMonitor.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="src/thrift/concurrency/BoostMutex.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="src/thrift/concurrency/BoostThreadFactory.cpp"
             ex="false"
             tool="1"
             flavor2="0">
