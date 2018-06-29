@@ -248,31 +248,6 @@
           <output>lib/libapachethriftd.a</output>
         </archiverTool>
       </compileType>
-      <item path="src/thrift/transport/TNonblockingSSLServerSocket.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="src/thrift/transport/TNonblockingSSLServerSocket.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/thrift/transport/TNonblockingServerSocket.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="src/thrift/transport/TNonblockingServerSocket.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/thrift/transport/TNonblockingServerTransport.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="buildcompiler.sh" ex="false" tool="3" flavor2="0">
       </item>
       <item path="inc/thrift/TApplicationException.h" ex="false" tool="3" flavor2="0">
@@ -764,6 +739,31 @@
       <item path="src/thrift/transport/THeaderTransport.cpp"
             ex="false"
             tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TNonblockingSSLServerSocket.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TNonblockingSSLServerSocket.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TNonblockingServerSocket.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TNonblockingServerSocket.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TNonblockingServerTransport.h"
+            ex="false"
+            tool="3"
             flavor2="0">
       </item>
       <item path="src/thrift/transport/TPipe.cpp" ex="false" tool="1" flavor2="0">
@@ -848,31 +848,6 @@
           <output>lib/libapachethrift.a</output>
         </archiverTool>
       </compileType>
-      <item path="src/thrift/transport/TNonblockingSSLServerSocket.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="src/thrift/transport/TNonblockingSSLServerSocket.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/thrift/transport/TNonblockingServerSocket.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
-      <item path="src/thrift/transport/TNonblockingServerSocket.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="src/thrift/transport/TNonblockingServerTransport.h"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="buildcompiler.sh" ex="false" tool="3" flavor2="0">
       </item>
       <item path="inc/thrift/TApplicationException.h" ex="false" tool="3" flavor2="0">
@@ -1364,6 +1339,31 @@
       <item path="src/thrift/transport/THeaderTransport.cpp"
             ex="false"
             tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TNonblockingSSLServerSocket.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TNonblockingSSLServerSocket.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TNonblockingServerSocket.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TNonblockingServerSocket.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="src/thrift/transport/TNonblockingServerTransport.h"
+            ex="false"
+            tool="3"
             flavor2="0">
       </item>
       <item path="src/thrift/transport/TPipe.cpp" ex="false" tool="1" flavor2="0">
